@@ -8,7 +8,6 @@ router.post('/', abonneController.create);
 router.put('/:id', abonneController.update);
 router.delete('/:id', abonneController.remove);
 
-// Liaison N:N
 router.post('/:id/cours', abonneController.inscrire);
 router.get('/:id/cours', abonneController.getCours);
 

@@ -1,0 +1,405 @@
+{
+  "info": {
+    "name": "API Salle de Sport",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Coachs",
+      "item": [
+        {
+          "name": "GET - Tous les coachs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/coachs",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "coachs"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST - Cr\u00e9er un coach",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Exemple Coach\",\n  \"specialite\": \"Yoga\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/coachs",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "coachs"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET - Coach par ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/coachs/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "coachs",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT - Modifier un coach",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Coach Modifi\\u00e9\",\n  \"specialite\": \"Pilates\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/coachs/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "coachs",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE - Supprimer un coach",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/coachs/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "coachs",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cours",
+      "item": [
+        {
+          "name": "GET - Tous les cours",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/cours",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cours"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST - Cr\u00e9er un cours",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Cardio\",\n  \"description\": \"Cours de cardio\",\n  \"coach_id\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/cours",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cours"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET - Cours par ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/cours/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cours",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT - Modifier un cours",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Cours modifi\\u00e9\",\n  \"description\": \"Nouveau descriptif\",\n  \"coach_id\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/cours/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cours",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE - Supprimer un cours",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/cours/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "cours",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Abonnes",
+      "item": [
+        {
+          "name": "GET - Tous les abonn\u00e9s",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST - Cr\u00e9er un abonn\u00e9",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Laura\",\n  \"email\": \"laura@mail.com\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "POST - Inscrire un abonn\u00e9 \u00e0 un cours",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cours_id\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes/1/cours",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes",
+                "1",
+                "cours"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET - Abonn\u00e9 par ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT - Modifier un abonn\u00e9",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nom\": \"Laura Modifi\\u00e9e\",\n  \"email\": \"laura.modif@mail.com\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE - Supprimer un abonn\u00e9",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET - Cours d\u2019un abonn\u00e9",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/abonnes/1/cours",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "abonnes",
+                "1",
+                "cours"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
