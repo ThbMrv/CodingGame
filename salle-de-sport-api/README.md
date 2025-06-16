@@ -64,9 +64,9 @@ DB_DATABASE=salle_de_sport
 ## Lancer l’API
 
 ```bash
-npm run dev   # mode développement (nodemon)
+npm run dev
 # ou
-node app.js   # mode production simple
+node app.js
 ```
 
 Le serveur écoute par défaut sur **http://localhost:3000**.
